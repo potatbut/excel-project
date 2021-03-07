@@ -15,9 +15,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/potatbut/exel-project/issues"
+    "url": "https://github.com/potatbut/excel-project/issues"
   },
-  "homepage": "https://github.com/potatbut/exel-project#readme",
+  "homepage": "https://github.com/potatbut/excel-project#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^8.0.0",
