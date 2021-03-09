@@ -1,0 +1,14 @@
+@import "variables";
+@import "mixins";
+
+.toolbar {
+    height: $toolbar-height;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+    padding: 10px;
+
+    //temp
+    background-color: #f8edeb;
+}

@@ -1,0 +1,21 @@
+@mixin button($color: green) {
+    height: 24px;
+    min-width: 24px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    border-radius: 3px;
+
+    & span {
+        font-size: 24px;
+    }
+
+    &:active {
+        color: $color;
+    }
+
+    &:hover {
+        background-color: rgb(207, 207, 207, 0.4);
+        cursor: pointer;
+    }
+}
