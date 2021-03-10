@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixins";
+
+.formula {
+    height: $formula-height;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    //temp
+    border: $border;
+    &__info {
+        font-size: 18px;
+        text-align: center;
+        font-style: italic;
+        min-width: $info-sell-width - 1;
+        border-right: $border;
+    }
+    &__input {
+        font-size: 12px;
+        height: 100%;
+        width: 100%;
+        padding: 4px;
+        outline: none;
+    }
+}
