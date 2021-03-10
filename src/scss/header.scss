@@ -10,7 +10,7 @@
     padding: 10px;
 
     //temp
-    border: 1px solid #ffe5d9;
+    border: $border;
 
     &__title-input {
         height: 34px;
@@ -33,7 +33,7 @@
         justify-content: space-between;
     }
 
-    .button {
+    &__button {
         @include button(#f4acb7)
     }
 }

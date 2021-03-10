@@ -4,11 +4,16 @@
 .toolbar {
     height: $toolbar-height;
     display: flex;
-    justify-content: space-between;
     width: 100vw;
     align-items: center;
     padding: 10px;
 
     //temp
-    background-color: #f8edeb;
+    border: $border;
+    border-top: none;
+    border-bottom: none;
+
+    &__button {
+        @include button(#9d8189)
+    }
 }
