@@ -1,5 +1,6 @@
 class Dom {
   constructor(selector) {
+    this.$$listeners = {}
     this.$el = typeof selector === 'string' ?
       document.querySelector(selector) :
       selector
@@ -18,8 +19,14 @@ class Dom {
     return this
   }
 
-  on() {
+  on(eventType, callback) {
+    this.$$listeners[eventType] = callback
+    console.log(this.$$listeners[eventType])
+    this.$el.addEventListener(eventType, callback)
+  }
 
+  off(evenType) {
+    this.$el.removeEventListener(evenType, this.$$listeners[evenType])
   }
 
   append(node) {
