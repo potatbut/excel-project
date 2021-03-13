@@ -20,13 +20,12 @@ class Dom {
   }
 
   on(eventType, callback) {
-    this.$$listeners[eventType] = callback
-    console.log(this.$$listeners[eventType])
+    // this.$$listeners[eventType] = callback
     this.$el.addEventListener(eventType, callback)
   }
 
-  off(evenType) {
-    this.$el.removeEventListener(evenType, this.$$listeners[evenType])
+  off(evenType, callback) {
+    this.$el.removeEventListener(evenType, callback)
   }
 
   append(node) {
