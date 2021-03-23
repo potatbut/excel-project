@@ -1,10 +1,15 @@
 import {ExcelComponent} from '@core/ExcelComponent';
+import {createTable} from './table.template';
 
 export class Table extends ExcelComponent {
   static className = 'table'
 
   toHTML() {
-    return `
+    return createTable()
+  }
+}
+
+/* `
       <div class="row">
 
         <div class="row-info"></div>
@@ -22,7 +27,7 @@ export class Table extends ExcelComponent {
           <div class="row-info">1</div>
 
           <div class="row-data">
-              <div class="cell " contenteditable>fdg g</div>
+              <div class="cell" contenteditable>fdg g</div>
               <div class="cell" contenteditable>1dffg</div>
               <div class="cell" contenteditable>dfgg</div>
           </div>
@@ -40,6 +45,4 @@ export class Table extends ExcelComponent {
           </div>
 
       </div>
-    `
-  }
-}
+    ` */
