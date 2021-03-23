@@ -12,8 +12,9 @@
         font-size: 18px;
         text-align: center;
         font-style: italic;
-        min-width: $info-sell-width - 1;
+        min-width: $info-sell-width - 2;
         border-right: $border;
+        
     }
     &__input {
         font-size: 12px;
