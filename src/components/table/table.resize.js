@@ -44,7 +44,3 @@ export function resizeHandler($root, event) {
     })
   }
 }
-
-export function shouldResize(event) {
-  return event.target.dataset.resize
-}
